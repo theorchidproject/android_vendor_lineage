@@ -20,6 +20,10 @@ PRODUCT_PACKAGES += \
 # Bromite Webview
 PRODUCT_PACKAGES += bromite-webview
 
+# Make sure that device overlays won't prevent the use
+# of microG as location provider
+PRODUCT_PACKAGE_OVERLAYS := vendor/lineage/overlay/microg
+
 PRODUCT_BRAND ?= LineageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
