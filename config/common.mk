@@ -1,5 +1,6 @@
-# Allow vendor/extra to override any property by setting it first
+# Orchid os core vendors
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+# Prebuilt vendors foss apps 
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 # Pepsi rom minumal microg
 $(call inherit-product-if-exists, vendor/microg/Android.mk)
@@ -112,7 +113,30 @@ PRODUCT_PACKAGES += \
 # Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
-    LineageSettingsProvider 
+    LineageSettingsProvider \
+    LockClock \
+    Profiles \
+    TrebuchetQuickStep \
+    WeatherProvider
+
+# LongShot
+PRODUCT_PACKAGES += \
+    Longshot
+
+# Accents
+PRODUCT_PACKAGES += \
+    LineageBlackTheme \
+    LineageDarkTheme \
+    LineageBlackAccent \
+    LineageBlueAccent \
+    LineageBrownAccent \
+    LineageCyanAccent \
+    LineageGreenAccent \
+    LineageOrangeAccent \
+    LineagePinkAccent \
+    LineagePurpleAccent \
+    LineageRedAccent \
+    LineageYellowAccent
 
 # Themes
 PRODUCT_PACKAGES += \
