@@ -61,6 +61,23 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# Themes
+PRODUCT_PACKAGES += \
+    XtendedClearSystemOverlay \
+    XtendedClearSystemUIOverlay \
+    PitchBlackSystemOverlay \
+    PitchBlackSystemUIOverlay \
+    SolarizedDarkSystemOverlay \
+    SolarizedDarkSystemUIOverlay \
+    BakedGreenSystemOverlay \
+    BakedGreenSystemUIOverlay \
+    ChocoXSystemOverlay \
+    ChocoXSystemUIOverlay \
+    MaterialOceanSystemOverlay \
+    MaterialOceanSystemUIOverlay \
+    DarkGreySystemOverlay \
+    DarkGreySystemUIOverlay
+
 # Lineage-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lineage-sysconfig.xml
