@@ -163,7 +163,6 @@ PRODUCT_PACKAGES += \
     vim \
     zip
 
-
 # Xtended Stuff - Copy to System fonts
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/fonts/gobold/Gobold.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Gobold.ttf \
