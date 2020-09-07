@@ -13,6 +13,11 @@ PRODUCT_PACKAGES += \
     com.google.android.maps.jar \
     additional_repos.xml
 
+# AuroraStore
+PRODUCT_PACKAGES += \
+    AuroraServices \
+    AuroraStore
+
 PRODUCT_BRAND ?= LineageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
