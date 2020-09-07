@@ -5,6 +5,16 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 
 PRODUCT_BRAND ?= Pepsi
 
+# microG packages
+PRODUCT_PACKAGES += \
+    GmsCore \
+    GsfProxy \
+    FakeStore \
+    MozillaNlpBackend \
+    NominatimNlpBackend \
+    com.google.android.maps.jar
+
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -234,6 +244,7 @@ Pepsi_VERSION := walkers
 
 LINEAGE_VERSION := Pepsi-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(Pepsi_VERSION)
 LINEAGE_DISPLAY_VERSION := Pepsi-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(Pepsi_VERSION)
+
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
