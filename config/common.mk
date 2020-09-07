@@ -17,6 +17,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AuroraServices \
     AuroraStore
+# Bromite Webview
+PRODUCT_PACKAGES += bromite-webview
 
 PRODUCT_BRAND ?= LineageOS
 
