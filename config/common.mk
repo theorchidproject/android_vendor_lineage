@@ -13,6 +13,8 @@ PRODUCT_PACKAGES += \
     com.google.android.maps.jar \
     additional_repos.xml
 
+#eSpeakTTS engine
+PRODUCT_PACKAGES += eSpeakTTS
 # AuroraStore
 PRODUCT_PACKAGES += \
     AuroraServices \
