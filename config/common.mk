@@ -19,8 +19,10 @@ PRODUCT_PACKAGES += eSpeakTTS
 PRODUCT_PACKAGES += \
     AuroraServices \
     AuroraStore
-# Bromite Webview
-PRODUCT_PACKAGES += bromite-webview
+# Bromite Webview & Browser
+PRODUCT_PACKAGES += \
+    bromite-webview \
+    Bromite
 
 # Make sure that device overlays won't prevent the use
 # of microG as location provider
