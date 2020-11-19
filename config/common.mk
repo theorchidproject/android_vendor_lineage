@@ -30,6 +30,16 @@ PRODUCT_PACKAGES += z_iptables
 # of microG as location provider
 PRODUCT_PACKAGE_OVERLAYS := vendor/lineage/overlay/microg
 
+#Captive-Portal detection overlays
+#(default: GrapheneOS - see vendor/lineage/overlay)
+PRODUCT_PACKAGES += \
+  overlay-204-android-Google \
+  overlay-204-android-openSUSE \
+  overlay-204-android-Ubuntu \
+  overlay-204-networkstack-Google \
+  overlay-204-networkstack-openSUSE \
+  overlay-204-networkstack-Ubuntu
+
 # Sign with own key
 ifneq ($(OWN_KEYS_DIR),)
 $(shell ln -sf $(OWN_KEYS_DIR) user-keys)
