@@ -16,9 +16,8 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/$(LINEAGE_VERSION).zip
 
-SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
+LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/Orchidos-$(LINEAGE_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
@@ -26,3 +25,10 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) $(MD5) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).md5sum
 	$(hide) rm -rf $(call intermediates-dir-for,PACKAGING,target_files)
 	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+
+
+	@echo -e ${CL_CYN}""${CL_CYN}
+	@echo -e ${CL_CYN}"Orchidos based on Lightningfastroms
+	@echo -e ${CL_CYN}""${CL_CYN}
+	@echo -e ${CL_CYN}"=================================-Package Completed-================================"${CL_RST}
+	@echo -e ""
