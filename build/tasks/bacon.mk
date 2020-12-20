@@ -30,5 +30,5 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	@echo -e ${CL_CYN}""${CL_CYN}
 	@echo -e ${CL_CYN}"Orchidos based on Lightningfastroms
 	@echo -e ${CL_CYN}""${CL_CYN}
-	@echo -e ${CL_CYN}"=================================-Package Completed-================================"${CL_RST}
+	@echo -e ${CL_CYN}"=================================-Please EnJoy BLM-================================"${CL_RST}
 	@echo -e ""
