@@ -5,7 +5,8 @@ $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 # Pepsi rom minumal microg
 $(call inherit-product-if-exists, vendor/microg/Android.mk)
 
-PRODUCT_BRAND ?= LineageOS
+
+PRODUCT_BRAND ?= Pepsi
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -284,8 +285,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-PRODUCT_VERSION_MAJOR = 18
-PRODUCT_VERSION_MINOR = 1
+
+PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE := 0
 
 ifeq ($(TARGET_VENDOR_SHOW_MAINTENANCE_VERSION),true)
@@ -293,6 +295,18 @@ ifeq ($(TARGET_VENDOR_SHOW_MAINTENANCE_VERSION),true)
 else
     LINEAGE_VERSION_MAINTENANCE := 0
 endif
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+ifeq ($(TARGET_GAPPS_ARCH),arm64)
+ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+TARGET_FACE_UNLOCK_SUPPORTED := true
+endif
+endif
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 # Set LINEAGE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -303,7 +317,6 @@ ifndef LINEAGE_BUILDTYPE
         LINEAGE_BUILDTYPE := $(RELEASE_TYPE)
     endif
 endif
-
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
