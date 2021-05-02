@@ -163,7 +163,7 @@ PRODUCT_PACKAGES += \
     vim \
     zip
 
-# Xtended Stuff - Copy to System fonts
+# Xtended android 10 fonts
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/fonts/gobold/Gobold.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Gobold.ttf \
     vendor/lineage/prebuilt/fonts/gobold/Gobold-Italic.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Gobold-Italic.ttf \
@@ -368,3 +368,6 @@ endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
+
+
+
