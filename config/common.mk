@@ -1,7 +1,13 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/partner_gms/gms.mk)
+$(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
+$(call inherit-product-if-exists, vendor/addons/config.mk)
 
-PRODUCT_BRAND ?= LineageOS
+# OrchidOs Rom Vendor addons for future releases
+#$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
+
+PRODUCT_BRAND ?=OrchidOs
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -196,6 +202,14 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     TrebuchetOverlay
+# Product version should match Android version
+PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MINOR = 0
+
+# Change OrchidOs Version with each major release.
+OrchidOs_VERSION := CherryBlossom
+LINEAGE_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
+LINEAGE_DISPLAY_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
 
 # Translations
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
@@ -209,4 +223,3 @@ include vendor/lineage/config/version.mk
 -include vendor/lineage-priv/keys/keys.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/lineage/config/partner_gms.mk
