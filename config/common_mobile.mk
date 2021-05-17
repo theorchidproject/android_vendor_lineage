@@ -8,16 +8,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # AOSP packages
 PRODUCT_PACKAGES += \
-    Email \
-    ExactCalculator \
     Exchange2
 
 # Lineage packages
 PRODUCT_PACKAGES += \
     Backgrounds \
-    Eleven \
+    Gallery \
     Etar \
-    Jelly \
     Profiles \
     Seedvault
 
