@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Backgrounds \
     Gallery \
+    Messaging \
     Etar \
     Profiles \
     Seedvault
