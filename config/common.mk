@@ -35,7 +35,6 @@ ifneq ($(OWN_KEYS_DIR),)
 $(shell ln -sf $(OWN_KEYS_DIR) user-keys)
 PRODUCT_DEFAULT_DEV_CERTIFICATE := user-keys/releasekey
 PRODUCT_OTA_PUBLIC_KEYS := user-keys/releasekey
-PRODUCT_EXTRA_RECOVERY_KEYS := user-keys/releasekey
 endif
 
 PRODUCT_BRAND ?= LineageOS
