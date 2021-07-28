@@ -6,8 +6,6 @@ PRODUCT_PACKAGES += \
     GmsCore \
     GsfProxy \
     FakeStore \
-    FDroid \
-    FDroidPrivilegedExtension \
     MozillaNlpBackend \
     NominatimNlpBackend \
     com.google.android.maps.jar \
@@ -18,7 +16,8 @@ PRODUCT_PACKAGES += eSpeakTTS
 # AuroraStore
 PRODUCT_PACKAGES += \
     AuroraServices \
-    AuroraStore
+    AuroraStore \
+    AuroraDroid
 # Bromite Webview & Browser
 PRODUCT_PACKAGES += \
     bromite-webview \
