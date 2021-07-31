@@ -119,6 +119,15 @@ PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
 
+# F-Droid
+PRODUCT_PACKAGES += \
+    FDroid \
+    FDroidPrivilegedExtension
+
+# F-Droid Priviliged Extension permissions
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/privapp-permissions-org.fdroid.fdroid.privileged.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-org.fdroid.fdroid.privileged.xml
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
