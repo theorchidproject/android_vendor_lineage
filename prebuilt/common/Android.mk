@@ -65,7 +65,6 @@ LOCAL_PRODUCT_MODULE := true
 
 # F-Droid
 
-LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := FDroid
@@ -90,6 +89,6 @@ LOCAL_MODULE := microG-repos
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/org.fdroid.fdroid
-LOCAL_SRC_FILES := additional_repos.xml
+LOCAL_SRC_FILES := etc/additional_repos.xml
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
