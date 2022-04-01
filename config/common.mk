@@ -2,8 +2,6 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 # Prebuilt vendors foss apps 
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
-# Pepsi rom minumal microg
-$(call inherit-product-if-exists, vendor/microg/Android.mk)
 
 
 PRODUCT_BRAND ?= Pepsi
@@ -231,6 +229,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# CUSTOM_PACKAGES
+PRODUCT_PACKAGES += \
+	FakeStore \
+	com.google.android.maps \
+	GmsCore \
+	GsfProxy
+	
+	
 # Custom off-mode charger
 ifeq ($(WITH_LINEAGE_CHARGER),true)
 PRODUCT_PACKAGES += \
