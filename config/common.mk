@@ -5,6 +5,18 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 
 PRODUCT_BRAND ?= Pepsi
 
+# IPTABLES Block script
+PRODUCT_PACKAGES += z_iptables
+
+# MicroG F-Droid Aurora section
+# F-Droid and F-Droid Priviliged Extension permissions - incase F-Droid is installed in the future
+PRODUCT_PACKAGES += \
+    FDroidPrivilegedExtension \
+    microG-repos
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/privapp-permissions-org.fdroid.fdroid.privileged.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-org.fdroid.fdroid.privileged.xml
+
 # microG packages
 PRODUCT_PACKAGES += \
     GmsCore \
@@ -12,23 +24,20 @@ PRODUCT_PACKAGES += \
     FakeStore \
     MozillaNlpBackend \
     NominatimNlpBackend \
-    com.google.android.maps.jar \
-    additional_repos.xml
+    com.google.android.maps.jar
 
 #eSpeakTTS engine
 PRODUCT_PACKAGES += eSpeakTTS
-# AuroraStore
+
+# AuroraStore - incase AuroraStore is installed in the future
 PRODUCT_PACKAGES += \
-    AuroraServices \
-    AuroraStore \
-    AuroraDroid
+    AuroraServices 
+	
 # Bromite Webview & Browser
 PRODUCT_PACKAGES += \
     bromite-webview \
     Bromite
-# IPTABLES Block script
-PRODUCT_PACKAGES += z_iptables
-
+	
 # Make sure that device overlays won't prevent the use
 # of microG as location provider
 PRODUCT_PACKAGE_OVERLAYS := vendor/lineage/overlay/microg
@@ -174,15 +183,6 @@ PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
 
-# F-Droid
-PRODUCT_PACKAGES += \
-    FDroid \
-    FDroidPrivilegedExtension \
-    microG-repos
-
-# F-Droid Priviliged Extension permissions
-PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/etc/privapp-permissions-org.fdroid.fdroid.privileged.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-org.fdroid.fdroid.privileged.xml
 
 # Config
 PRODUCT_PACKAGES += \
