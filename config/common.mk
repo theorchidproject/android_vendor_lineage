@@ -3,6 +3,10 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 
+# OrchidOs ROM core vendor files
+$(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
+
+# Product Name
 PRODUCT_BRAND ?= Pepsi
 
 # IPTABLES Block script
