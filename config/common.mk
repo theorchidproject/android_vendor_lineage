@@ -1,7 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/microg/microg-vendor.mk)
-
+$(call inherit-product, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 
