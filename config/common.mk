@@ -1,6 +1,5 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product, vendor/microg/microg-vendor.mk)
 $(call inherit-product, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
@@ -120,6 +119,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
+
+# CUSTOM_PACKAGES MicroG
+	FDroidPrivilegedExtension \
+	FDroid \
+	FakeStore \
+	GmsCore \
+	GsfProxy \
+	MozillaNlpBackend \
+	additional_repos \
+	com.google.android.maps \
+	sysconfig \
+	AuroraServices
 
 # Config
 PRODUCT_PACKAGES += \
