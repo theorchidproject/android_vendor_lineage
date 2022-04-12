@@ -1,9 +1,10 @@
-# Allow vendor/extra to override any property by setting it first
+# OrchidOs vendors
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
-
+$(call inherit-product-if-exists, vendor/orchidossecurity/config.mk)
+$(call inherit-product-if-exists, vendor/vanced/config.mk)
 
 PRODUCT_BRAND ?= Pepsi
 
@@ -122,8 +123,6 @@ PRODUCT_PACKAGES += \
 
 # CUSTOM_PACKAGES MicroG
 CUSTOM_PACKAGES += \
-    FDroidPrivilegedExtension \
-    FDroid \
     FakeStore \
     GmsCore \
     GsfProxy \
