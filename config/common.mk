@@ -1,8 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product, vendor/prebuilts/prebuilts.mk)
+$(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
+
 
 PRODUCT_BRAND ?= Pepsi
 
@@ -112,8 +113,7 @@ PRODUCT_PACKAGES += \
 # Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
-    LineageSettingsProvider \
-    Updater
+    LineageSettingsProvider
 
 # Themes
 PRODUCT_PACKAGES += \
@@ -121,16 +121,17 @@ PRODUCT_PACKAGES += \
     ThemePicker
 
 # CUSTOM_PACKAGES MicroG
-	FDroidPrivilegedExtension \
-	FDroid \
-	FakeStore \
-	GmsCore \
-	GsfProxy \
-	MozillaNlpBackend \
-	additional_repos \
-	com.google.android.maps \
-	sysconfig \
-	AuroraServices
+CUSTOM_PACKAGES += \
+    FDroidPrivilegedExtension \
+    FDroid \
+    FakeStore \
+    GmsCore \
+    GsfProxy \
+    MozillaNlpBackend \
+    additional_repos \
+    com.google.android.maps \
+    sysconfig \
+    AuroraServices
 
 # Config
 PRODUCT_PACKAGES += \
