@@ -13,30 +13,11 @@ PRODUCT_PACKAGES += \
 # Lineage packages
 PRODUCT_PACKAGES += \
     Backgrounds \
-    Gallery \
-    Messaging \
     Etar \
     Profiles \
     Seedvault
 
-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
 
-ifeq ($(PRODUCT_TYPE), go)
-PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
-else
-PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
-endif
 
 # Accents
 PRODUCT_PACKAGES += \
