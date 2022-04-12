@@ -1,7 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
+
 
 PRODUCT_BRAND ?= Pepsi
 
@@ -111,9 +113,7 @@ PRODUCT_PACKAGES += \
 # Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
-    LineageSettingsProvider \
-    LineageSetupWizard \
-    Updater
+    LineageSettingsProvider
 
 # Themes
 PRODUCT_PACKAGES += \
