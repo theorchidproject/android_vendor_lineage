@@ -130,7 +130,8 @@ CUSTOM_PACKAGES += \
     additional_repos \
     com.google.android.maps \
     sysconfig \
-    AuroraServices
+    AuroraServices \
+		telegram
 
 # Config
 PRODUCT_PACKAGES += \
