@@ -3,6 +3,8 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/pepsi/config.mk)
+
 
 
 PRODUCT_BRAND ?= Pepsi
@@ -191,7 +193,7 @@ PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = 0
 
 # Change Pepsi Version with each major release.
-Pepsi_VERSION := Walkers Beta
+Pepsi_VERSION := Walkers
 
 LINEAGE_VERSION := Pepsi-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(Pepsi_VERSION)
 LINEAGE_DISPLAY_VERSION := Pepsi-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(Pepsi_VERSION)
