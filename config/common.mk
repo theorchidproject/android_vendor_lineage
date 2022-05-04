@@ -117,10 +117,6 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider
 
-# MikuWallpapers
-PRODUCT_PACKAGES += \
-    MikuWallpapers
-	
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \
