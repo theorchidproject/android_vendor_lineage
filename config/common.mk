@@ -1,6 +1,6 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product-if-exists, vendor/lineage/prebuilts/pepsi/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/pepsi/config.mk)
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 
 PRODUCT_BRAND ?= Pepsi
