@@ -1,7 +1,7 @@
 include $(call first-makefiles-under,$(LOCAL_PATH))
 
 PRODUCT_PACKAGES += \
-	  abridge \
+	abridge \
     acdisplay \
     graphenecamera \
     material \
@@ -9,9 +9,16 @@ PRODUCT_PACKAGES += \
     Openboard \
     OzoneStorage \
     pep \
-		Koler \
+	Koler \
     qksms \
     rootless \
     simpleGallery \
     taptap \
+    audioR \
+    brair \
+    pdf \
+    ruthless \
+    songtube \
+    telefork \
+    weather \
     warden
