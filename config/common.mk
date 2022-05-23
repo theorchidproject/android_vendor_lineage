@@ -109,13 +109,14 @@ PRODUCT_PACKAGES += \
 	FDroid \
 	FDroidPrivilegedExtension \
 	GsfProxy \
-    fakestore \
+    Fakestore \
     sysconfig \
-    gmscore \
+    Gmscore \
+	org.microg.gms.droidguard-4\
     com.google.android.maps \
-    mozillanlpbackend \
+    Mozillanlpbackend \
     additional_repos \
-    nominatimnlpbackend
+    Nominatimnlpbackend
 	
 # Bootanimation
 TARGET_SCREEN_WIDTH ?= 1080
