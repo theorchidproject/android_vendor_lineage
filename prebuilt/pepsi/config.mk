@@ -1,16 +1,18 @@
 include $(call first-makefiles-under,$(LOCAL_PATH))
 
 PRODUCT_PACKAGES += \
-	abridge \
-    acdisplay \
+	Snotes \
+    pdf \
     graphenecamera \
     material \
-    olauncher \
+    telegram \
     Openboard \
     OzoneStorage \
     pep \
     qksms \
     rootless \
     simpleGallery \
-    taptap \
+    TapTap-v1.3 \
+    weather \
+    audioR \
     warden
