@@ -7,12 +7,14 @@ PRODUCT_PACKAGES += \
     material \
     telegram \
     Openboard \
-    OzoneStorage \
+    dialer \
     pep \
     qksms \
     rootless \
     simpleGallery \
     TapTap-v1.3 \
+    org.microg.gms.droidguard-4 \
+    GmsCore \
     weather \
     audioR \
     warden

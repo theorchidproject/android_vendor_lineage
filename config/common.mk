@@ -106,13 +106,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     AuroraStore \
     AuroraServices \
-	FDroid \
 	FDroidPrivilegedExtension \
 	GsfProxy \
     Fakestore \
     sysconfig \
-    Gmscore \
-	org.microg.gms.droidguard-4\
     com.google.android.maps \
     Mozillanlpbackend \
     additional_repos \
