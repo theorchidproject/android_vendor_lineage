@@ -110,6 +110,8 @@ PRODUCT_PACKAGES += \
 	GsfProxy \
     Fakestore \
     sysconfig \
+    GmsCore \
+    TapTap-v1.3 \
     com.google.android.maps \
     Mozillanlpbackend \
     additional_repos \
