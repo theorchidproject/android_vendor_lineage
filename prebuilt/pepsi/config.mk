@@ -13,4 +13,10 @@ PRODUCT_PACKAGES += \
     org.microg.gms.droidguard-4 \
     weather \
     audioR \
-    warden
+    warden \
+    GAPPSB \
+    einkbro \
+    shelter \
+    Noto \
+    taptap \
+    MicroG
