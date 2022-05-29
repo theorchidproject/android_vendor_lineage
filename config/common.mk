@@ -106,12 +106,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     AuroraStore \
     AuroraServices \
-	FDroidPrivilegedExtension \
-	GsfProxy \
+    FDroidPrivilegedExtension \
+    GsfProxy \
     Fakestore \
     sysconfig \
-    GmsCore \
-    TapTap-v1.3 \
     com.google.android.maps \
     Mozillanlpbackend \
     additional_repos \
