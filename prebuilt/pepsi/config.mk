@@ -5,17 +5,15 @@ PRODUCT_PACKAGES += \
     graphenecamera \
     material \
     Openboard \
-		ForkClient \
     pep \
     qksms \
     rootless \
     simpleGallery \
+    weather \
     audioR \
     warden \
-		dialer \
-		mnml \
-    einkbro \
-		brair \
+    GAPPSB \
+    duckduck \
+    shelter \
     Noto \
-    tap \
-	  mnml
+    taptap
