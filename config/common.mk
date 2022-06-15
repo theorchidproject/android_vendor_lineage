@@ -1,7 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product-if-exists, vendor/lineage/config/Pepsi.mk)
-$(call inherit-product-if-exists, vendor/addons/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/pepsi/config.mk)
+$(call inherit-product-if-exists, vendor/partner_gms/gms.mk)
+
+
 
 PRODUCT_BRAND ?= Pepsi
 
@@ -101,6 +103,20 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+
+#microg
+WITH_GMS=true
+
+# microg packages
+#CUSTOM_PACKAGES += \
+#		GmsCore \
+#		GsfProxy \
+#		FakeStore \
+#		IchnaeaNlpBackend \
+#		NominatimGeocoderBackend \
+#		AuroraStore \
+#		AuroraServices
 
 # Bootanimation
 TARGET_SCREEN_WIDTH ?= 1080
