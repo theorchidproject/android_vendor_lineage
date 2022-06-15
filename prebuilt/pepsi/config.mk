@@ -5,18 +5,17 @@ PRODUCT_PACKAGES += \
     graphenecamera \
     material \
     Openboard \
-    dialer \
+		ForkClient \
     pep \
     qksms \
     rootless \
     simpleGallery \
-    org.microg.gms.droidguard-4 \
-    weather \
     audioR \
     warden \
-    GAPPSB \
+		dialer \
+		mnml \
     einkbro \
-    shelter \
+		brair \
     Noto \
-    taptap \
-    MicroG
+    tap \
+	  mnml
