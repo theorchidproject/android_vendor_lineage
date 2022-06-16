@@ -12,8 +12,7 @@ PRODUCT_PACKAGES += \
     weather \
     audioR \
     warden \
-    GAPPSB \
     duckduck \
     shelter \
     Noto \
-    taptap
+    tap
