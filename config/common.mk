@@ -1,11 +1,16 @@
 # Allow vendor/extra to override any property by setting it first
-$(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product-if-exists, vendor/partner_gms/gms.mk)
+
+# OrchidOs config vendor
 $(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
-$(call inherit-product-if-exists, vendor/addons/config.mk)
+
+# MicroG or Gapps vendor call 
+$(call inherit-product-if-exists, vendor/partner_gms/gms.mk)
+WITH_GMS=true
+
+# OrchidOs vendor addons 
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
 $(call inherit-product-if-exists, vendor/lineage/fonts.mk)
-# OrchidOs Rom Vendor addons for future releases
-#$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/config/version.mk)
 
 PRODUCT_BRAND ?=OrchidOs
 
@@ -84,10 +89,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-# Include AOSP audio files
+# Include Lineage and AOSP audio files
 include vendor/lineage/config/aosp_audio.mk
-
-# Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
@@ -117,20 +120,15 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
-    Updater
+    Updater \
+    LineageThemesStub \
+    ThemePicker \
+    SimpleDeviceConfig
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
 
-# Themes
-PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageThemesStub \
-    ThemePicker
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
@@ -204,10 +202,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     TrebuchetOverlay
-# Product version should match Android version
-PRODUCT_VERSION_MAJOR = 1
-PRODUCT_VERSION_MINOR = 0
-
 # Change OrchidOs Version with each major release.
 OrchidOs_VERSION := CherryBlossom
 LINEAGE_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
@@ -220,7 +214,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
-include vendor/lineage/config/version.mk
 
 -include vendor/lineage-priv/keys/keys.mk
 
