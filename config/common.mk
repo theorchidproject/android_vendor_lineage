@@ -5,7 +5,9 @@ $(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 $(call inherit-product-if-exists, vendor/lineage/fonts.mk)
 # OrchidOs Rom Vendor addons for future releases
-#$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/config/version.mk)
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/lawnchair/lawnchair.mk)
 
 PRODUCT_BRAND ?=OrchidOs
 
