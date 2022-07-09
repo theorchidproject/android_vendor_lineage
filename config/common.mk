@@ -13,8 +13,10 @@ $(call inherit-product-if-exists, vendor/lineage/fonts.mk)
 ifeq ($(WITH_GMS), true)
 $(call inherit-product, vendor/lineage/partner_gms/gms.mk)
 endif
+# Build Patch
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= OrchidOs
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
