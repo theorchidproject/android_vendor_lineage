@@ -206,6 +206,4 @@
     <!-- Whether to show estimate in QS header. Default to false in case there's not enough
      space -->
     <bool name="config_showBatteryEstimateQSBH">true</bool>
-    <!-- Whether safe headphone volume is enabled or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">false</bool>
 </resources>

@@ -10,7 +10,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Backgrounds \
     Etar \
-    ExactCalculator \
     Profiles \
     Seedvault
 

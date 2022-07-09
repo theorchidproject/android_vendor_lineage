@@ -1,13 +1,28 @@
-# Allow vendor/extra to override any property by setting it first
-$(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product-if-exists, vendor/partner_gms/gms.mk)
+# Welcome to Orchidos base rom 
+
+# OrchidOs config vendor
 $(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
-$(call inherit-product-if-exists, vendor/addons/config.mk)
-$(call inherit-product-if-exists, vendor/lineage/fonts.mk)
-# OrchidOs Rom Vendor addons for future releases
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
-$(call inherit-product-if-exists, vendor/lineage/config/version.mk)
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/lawnchair/lawnchair.mk)
+
+
+#OrchidOs MicroG uncomment to enable check clone of vendor folder
+#$(call inherit-product-if-exists, vendor/lineage/prebuilt/partner_gms/gms.mk)
+# OrchidosCoreProduct core of Orchid Rom
+$(call inherit-product, vendor/lineage/orchidoscore/systemconfig/OrchidosCoreProduct.mk)
+# temporary fix to be able to build third party security focused applications without lapses in system security
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
+
+# OrchidOs MicroG and  minimal GMS options to enable change to applicable call standard vendor settings are WITH_GMS
+# standard build settings:
+WITH_GMS =true
+# Below are the calls, the  vendor locations and core build information. Read carefully to issue call for required version
+# WITH_GMS is MicroG, WITH_GMSMIN is minimal gogle services
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gms/gms.mk)
+endif
+ifeq ($(WITH_GMSMIN), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gmsmin/gmsmin.mk)
+endif
+
 
 PRODUCT_BRAND ?=OrchidOs
 
@@ -86,10 +101,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-# Include AOSP audio files
+# Include Lineage and AOSP audio files
 include vendor/lineage/config/aosp_audio.mk
-
-# Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
@@ -118,20 +131,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard 
+    LineageSetupWizard \
+    LineageThemesStub \
+    ThemePicker \
+    RepainterServicePriv \
+    SimpleDeviceConfig
+
+# Misc packages and Config
+PRODUCT_PACKAGES += \
+    SakuraSettings \
+    WalkersPapers
+
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
 
-# Themes
-PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageThemesStub \
-    ThemePicker
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
@@ -205,10 +220,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     TrebuchetOverlay
-# Product version should match Android version
-PRODUCT_VERSION_MAJOR = 1
-PRODUCT_VERSION_MINOR = 0
-
 # Change OrchidOs Version with each major release.
 OrchidOs_VERSION := CherryBlossom
 LINEAGE_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
@@ -221,7 +232,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
-include vendor/lineage/config/version.mk
 
 -include vendor/lineage-priv/keys/keys.mk
 
