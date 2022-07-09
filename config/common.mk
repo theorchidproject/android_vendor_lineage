@@ -4,7 +4,7 @@
 $(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
 
 # MicroG or Gapps vendor call 
-$(call inherit-product-if-exists, vendor/partner_gms/gms.mk)
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/partner_gms/gms.mk)
 WITH_GMS=true
 
 # OrchidOs vendor addons 
