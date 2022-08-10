@@ -3,11 +3,10 @@
 # OrchidOs config vendor
 $(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
 
-# MicroG or Gapps vendor call 
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/partner_gms/gms.mk)
-WITH_GMS=true
+#OrchidOs MicroG uncomment to enable check clone of vendor folder
+#$(call inherit-product-if-exists, vendor/lineage/prebuilt/partner_gms/gms.mk)
 
-# OrchidOs vendor addons 
+# OrchidOs vendor addons
 $(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
 $(call inherit-product-if-exists, vendor/lineage/fonts.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/version.mk)
