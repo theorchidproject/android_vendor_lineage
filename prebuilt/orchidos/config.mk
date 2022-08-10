@@ -14,4 +14,6 @@ PRODUCT_PACKAGES += \
     pdf \
     pep \
     qksms \
-    tap
+		simplegallery \
+    tap \
+		warden

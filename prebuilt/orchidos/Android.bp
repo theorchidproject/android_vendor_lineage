@@ -16,14 +16,13 @@ android_app_import {
 
 android_app_import {
 	name: "brair",
-	owner: "google",
+	owner: "brair",
 	apk: "brair.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: false,
-	product_specific: true,
 }
 
 android_app_import {
@@ -58,9 +57,8 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
-	product_specific: true,
-	overrides: ["Camera2" , "Camera3" , "Snap"],
+	privileged: false,
+	product_specific: false,
 }
 
 android_app_import {
@@ -121,7 +119,7 @@ android_app_import {
 	privileged: false,
 }
 
-aandroid_app_import {
+android_app_import {
 	name: "pep",
 	owner: "google",
 	apk: "pep.apk",
@@ -129,9 +127,8 @@ aandroid_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
+	privileged: false,
 	product_specific: true,
-	overrides: ["Email2"],
 }
 
 android_app_import {
@@ -143,21 +140,18 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
-	overrides: ["messaging"],
 }
 
 android_app_import {
 	name: "simpleGallery",
-	owner: "google",
+	owner: "simpleGallery",
 	apk: "simpleGallery.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
-	product_specific: true,
-	overrides: ["Gallery3d" , "Gallery2"],
+	privileged: false,
+	overrides: ["gallery3d" , "gallery2"],
 }
 
 android_app_import {
@@ -173,12 +167,11 @@ android_app_import {
 
 android_app_import {
 	name: "warden",
-	owner: "google",
+	owner: "warden",
 	apk: "warden.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
+	privileged: false,
 }
-
