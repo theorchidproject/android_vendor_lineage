@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (c) 2009, The Android Open Source Project
+ * Copyright (c) 2020, Xtended Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +15,7 @@
  * limitations under the License.
  */
 -->
-<resources>
-    <bool name="def_wifi_on">true</bool>
-
-    <string name="def_backup_transport">com.stevesoltys.seedvault.transport.ConfigurableBackupTransport</string>
-
-    <!-- Display -->
-    <bool name="def_one_handed_mode_enabled">true</bool>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Headline / Body font Simple Day overlay -->
+    <string name="font_simpleday_source_overlay" translatable="false">Simple Day</string>
 </resources>
