@@ -121,7 +121,6 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
-    Updater \
     LineageThemesStub \
     ThemePicker \
     SimpleDeviceConfig
