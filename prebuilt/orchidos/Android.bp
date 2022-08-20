@@ -60,29 +60,18 @@ android_app_import {
 	privileged: false,
 	product_specific: false,
 }
+
 android_app_import {
-    name: "material",
-
-    privileged: true,
+	name: "material",
+	owner: "google",
+	apk: "material.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 	overrides: ["DocumentsUI"],
-    system_ext_specific: true,
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-
-    compile_multilib: "both",
-    apk: "material.apk",
-
-    required: ["privapp_whitelist_me.zhanghai.android.files.xml"],
-}
-
-prebuilt_etc {
-    name: "privapp_whitelist_me.zhanghai.android.files",
-    src: "privapp_whitelist_me.zhanghai.android.files.xml",
-    system_ext_specific: true,
-    sub_dir: "permissions",
-
 }
 android_app_import {
 	name: "mnml",
