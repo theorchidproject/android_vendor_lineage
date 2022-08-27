@@ -3,17 +3,15 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     audioR \
-    brair \
-    duckduck \
+    fulgris \
     ForkClient \
-    graphenecamera \
+	k9mail \
     material \
-    mnml \
-    music \
     Openboard \
     pdf \
-    pep \
-    qksms \
-		simplegallery \
+	quillnotes \
+    simplecam \
+	simplegallery \
+	tasks \
     tap \
-		warden
+	warden
