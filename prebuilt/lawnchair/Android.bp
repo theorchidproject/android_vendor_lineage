@@ -15,10 +15,9 @@ android_app_import {
     overrides: [
         "Home",
         "Launcher2",
-        "Launcher3",
+        "launcher3",
         "Launcher3QuickStep",
-        "NexusLauncherRelease"
-		"launcher3",
+        "NexusLauncherRelease",
     ],
 
     dex_preopt: {

@@ -1,7 +1,6 @@
 soong_namespace {
 }
 
-
 android_app_import {
 	name: "audioR",
 	owner: "google",
@@ -14,6 +13,17 @@ android_app_import {
 	product_specific: true,
 }
 
+android_app_import {
+	name: "lawnfeed",
+	owner: "google",
+	apk: "lawnfeed.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
 
 android_app_import {
 	name: "fulgris",
@@ -63,7 +73,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-	overrides: ["DocumentsUI"],
 }
 
 android_app_import {
@@ -90,9 +99,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "quillnotes",
+	name: "sms",
 	owner: "google",
-	apk: "quillnotes.apk",
+	apk: "sms.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -135,7 +144,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	overrides: ["fmradio"],
+	overrides: ["caf.fmradio"],
 }
 	
 android_app_import {
@@ -149,13 +158,3 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "warden",
-	owner: "warden",
-	apk: "warden.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-}
