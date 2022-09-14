@@ -120,7 +120,7 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-	overrides: ["camera2"],
+	overrides: ["camera2", Camera2 ],
 }
 
 android_app_import {
@@ -144,7 +144,7 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	overrides: ["caf.fmradio"],
+	overrides: ["com.caf.fmradio"],
 }
 	
 android_app_import {
