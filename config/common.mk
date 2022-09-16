@@ -1,18 +1,22 @@
-# Allow vendor/extra to override any property by setting it first
+# Welcome to Orchidos base rom 
 
-# OrchidOs config vendor
-$(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
-WITH_GMS =true
+# OrchidosCoreProduct core of Orchid Rom
+$(call inherit-product, vendor/lineage/orchidoscore/systemconfig/OrchidosCoreProduct.mk)
+# temporary fix to be able to build third party security focused applications without lapses in system security
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
 
-#OrchidOs MicroG uncomment to enable check clone of vendor folder
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/partner_gms/gms.mk)
+# OrchidOs MicroG and  minimal GMS options to enable change to applicable call standard vendor settings are WITH_GMS
+# standard build settings:
+WITH_GMS =true
+# Below are the calls, the  vendor locations and core build information. Read carefully to issue call for required version
+# WITH_GMS is MicroG, WITH_GMSMIN is minimal gogle services
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gms/gms.mk)
+endif
+ifeq ($(WITH_GMSMIN), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gmsmin/gmsmin.mk)
+endif
 
-# OrchidOs vendor addons
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
-$(call inherit-product-if-exists, vendor/lineage/fonts.mk)
-$(call inherit-product-if-exists, vendor/lineage/config/version.mk)
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/lawnchair/lawnchair.mk)
 
 PRODUCT_BRAND ?=OrchidOs
 
@@ -124,7 +128,12 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     LineageThemesStub \
     ThemePicker \
+    RepainterServicePriv \
     SimpleDeviceConfig
+
+# Misc packages and Config
+PRODUCT_PACKAGES += \
+    RepainterServicePriv 
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc

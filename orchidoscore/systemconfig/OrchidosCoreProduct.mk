@@ -1,0 +1,8 @@
+##  OrchidOs config vendor Product this is th core of Orchid build
+$(call inherit-product, vendor/lineage/orchidoscore/systemconfig/orchidos.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/systemconfig/sounds.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/systemconfig/version.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/orchidos_prebuilts/config.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/lawnchair/lawnchair.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/addons/addons.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/bromite_system_inline/bromite.mk)
