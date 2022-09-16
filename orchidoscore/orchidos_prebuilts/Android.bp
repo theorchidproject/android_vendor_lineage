@@ -1,0 +1,160 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "audioR",
+	owner: "google",
+	apk: "audioR.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "lawnfeed",
+	owner: "google",
+	apk: "lawnfeed.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "fulgris",
+	owner: "google",
+	apk: "fulgris.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ForkClient",
+	owner: "google",
+	apk: "ForkClient.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	
+}
+
+android_app_import {
+	name: "k9mail",
+	owner: "google",
+	apk: "k9mail.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "material",
+	owner: "google",
+	apk: "material.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Openboard",
+	owner: "google",
+	apk: "Openboard.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "pdf",
+	owner: "google",
+	apk: "pdf.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+}
+
+android_app_import {
+	name: "sms",
+	owner: "google",
+	apk: "sms.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "simplecam",
+	owner: "google",
+	apk: "simplecam.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["camera2", "Camera2" ],
+}
+
+android_app_import {
+	name: "simpleGallery",
+	owner: "simpleGallery",
+	apk: "simpleGallery.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	overrides: ["gallery3d" , "gallery2"],
+}
+
+android_app_import {
+	name: "tasks",
+	owner: "google",
+	apk: "tasks.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	overrides: ["com.caf.fmradio"],
+}
+	
+android_app_import {
+	name: "tap",
+	owner: "google",
+	apk: "tap.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+

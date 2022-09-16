@@ -1,0 +1,1 @@
+-include $(LOCAL_PATH)/gmsv.mk

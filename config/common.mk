@@ -1,18 +1,31 @@
 # Allow vendor/extra to override any property by setting it first
 
-# OrchidOs config vendor
-$(call inherit-product-if-exists, vendor/lineage/config/orchidos.mk)
-WITH_GMS =true
+# OrchidOs config vendor this is th core of Orchid build
+$(call inherit-product-if-exists, vendor/lineage/orchidoscore/systemconfig/orchidos.mk)
+$(call inherit-product-if-exists, vendor/lineage/orchidoscore/systemconfig/version.mk)
+# OrchidOs vendor Core vendor addons
+$(call inherit-product-if-exists, vendor/lineage/orchidoscore/orchidos_prebuilts/config.mk)
+$(call inherit-product-if-exists, vendor/lineage/orchidoscore/lawnchair/lawnchair.mk)
+$(call inherit-product-if-exists, vendor/lineage/orchidoscore/systemconfig/overlay)
+$(call inherit-product-if-exists, vendor/lineage/orchidoscore/addons/addons.mk)
+
+# temporary fix to be able to build third party security focused applications without lapses in system security
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
 
-#OrchidOs MicroG uncomment to enable check clone of vendor folder
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/partner_gms/gms.mk)
-
-# OrchidOs vendor addons
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/orchidos/config.mk)
-$(call inherit-product-if-exists, vendor/lineage/fonts.mk)
-$(call inherit-product-if-exists, vendor/lineage/config/version.mk)
-$(call inherit-product-if-exists, vendor/lineage/prebuilt/lawnchair/lawnchair.mk)
+# OrchidOs MicroG and  minimal GMS options to enable change to applicable call standard vendor settings are WITH_GMS
+# standard build settings:
+WITH_GMS =true
+# Below are the calls, the  vendor locations and core build information. Read carefully to issue call for required version
+# WITH_GMS is MicroG, WITH_GMSMIN is minimal gogle services, WITH_GMSV is a vinalla MicroG without Aroura services
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gms/gms.mk)
+endif
+ifeq ($(WITH_GMSMIN), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gmsmin/gmsmin.mk)
+endif
+ifeq ($(WITH_GMSV), true)
+$(call inherit-product, vendor/lineage/orchidoscore/partner_gmsv/gmsv.mk)
+endif
 
 PRODUCT_BRAND ?=OrchidOs
 
@@ -124,7 +137,12 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     LineageThemesStub \
     ThemePicker \
+    RepainterServicePriv \
     SimpleDeviceConfig
+
+# Misc packages and Config
+PRODUCT_PACKAGES += \
+    RepainterServicePriv 
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
