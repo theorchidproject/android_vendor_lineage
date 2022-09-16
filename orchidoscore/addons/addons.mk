@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
     FontGrandHotelOverlay \
     FontHarmonySansOverlay \
-    FontLatoOverlay \
     FontLGSmartGothicOverlay \
     FontLinotteOverlay \
     FontNokiaPureOverlay \
@@ -47,7 +46,6 @@ PRODUCT_PACKAGES += \
     FontReemKufiOverlay \
     FontRobotoCondensedOverlay \
     FontRosemaryOverlay \
-    FontRubikOverlay \
     FontSamsungOneOverlay \
     FontSimpleDaySourceOverlay \
     FontSonySketchOverlay \
@@ -103,9 +101,7 @@ PRODUCT_PACKAGES += \
     IconPackOOSThemePickerOverlay \
     IconPackOutlineAndroidOverlay \
     IconPackOutlineSettingsOverlay \
-    IconPackOutlineSystemUIOverlay \
-    IconPackAcherusAndroidOverlay \
-    IconPackAcherusSystemUIOverlay
+    IconPackOutlineSystemUIOverlay 
 
 # Icon Shapes
 PRODUCT_PACKAGES += \
@@ -115,15 +111,8 @@ PRODUCT_PACKAGES += \
     IconShapeHeartOverlay \
     IconShapeHexagonOverlay \
     IconShapeLeafOverlay \
-    IconShapePebbleOverlay \
     IconShapeRoundedHexagonOverlay \
-    IconShapeRoundedRectOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeStretchedOverlay \
-    IconShapeTaperedRectOverlay \
-    IconShapeTeardropOverlay \
-    IconShapeVesselOverlay
+    IconShapeStretchedOverlay 
 
 # Signal / WiFi Icons
 PRODUCT_PACKAGES += \

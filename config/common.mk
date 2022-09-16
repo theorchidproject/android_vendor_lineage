@@ -1,14 +1,7 @@
-# Allow vendor/extra to override any property by setting it first
+# Welcome to Orchidos base rom 
 
-# OrchidOs config vendor this is th core of Orchid build
-$(call inherit-product-if-exists, vendor/lineage/orchidoscore/systemconfig/orchidos.mk)
-$(call inherit-product-if-exists, vendor/lineage/orchidoscore/systemconfig/version.mk)
-# OrchidOs vendor Core vendor addons
-$(call inherit-product-if-exists, vendor/lineage/orchidoscore/orchidos_prebuilts/config.mk)
-$(call inherit-product-if-exists, vendor/lineage/orchidoscore/lawnchair/lawnchair.mk)
-$(call inherit-product-if-exists, vendor/lineage/orchidoscore/systemconfig/overlay)
-$(call inherit-product-if-exists, vendor/lineage/orchidoscore/addons/addons.mk)
-
+# OrchidosCoreProduct core of Orchid Rom
+$(call inherit-product, vendor/lineage/orchidoscore/systemconfig/OrchidosCoreProduct.mk)
 # temporary fix to be able to build third party security focused applications without lapses in system security
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
 
@@ -16,16 +9,14 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
 # standard build settings:
 WITH_GMS =true
 # Below are the calls, the  vendor locations and core build information. Read carefully to issue call for required version
-# WITH_GMS is MicroG, WITH_GMSMIN is minimal gogle services, WITH_GMSV is a vinalla MicroG without Aroura services
+# WITH_GMS is MicroG, WITH_GMSMIN is minimal gogle services
 ifeq ($(WITH_GMS), true)
 $(call inherit-product, vendor/lineage/orchidoscore/partner_gms/gms.mk)
 endif
 ifeq ($(WITH_GMSMIN), true)
 $(call inherit-product, vendor/lineage/orchidoscore/partner_gmsmin/gmsmin.mk)
 endif
-ifeq ($(WITH_GMSV), true)
-$(call inherit-product, vendor/lineage/orchidoscore/partner_gmsv/gmsv.mk)
-endif
+
 
 PRODUCT_BRAND ?=OrchidOs
 

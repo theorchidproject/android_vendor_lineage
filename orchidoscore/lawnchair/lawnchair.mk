@@ -1,6 +1,6 @@
 # Lawnchair
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/lineage/prebuilt/lawnchair
+    vendor/lineage/orchidoscore/lawnchair
 
 PRODUCT_PACKAGES += \
     Lawnchair \

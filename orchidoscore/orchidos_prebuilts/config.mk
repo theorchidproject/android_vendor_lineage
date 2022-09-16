@@ -1,14 +1,13 @@
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/lineage/prebuilt/orchidos
+    vendor/lineage/orchidoscore/orchidos_prebuilts
 
 PRODUCT_PACKAGES += \
     lawnfeed \
     audioR \
     sms \
-    fulgris \
     ForkClient \
 	k9mail \
-    material \
+    gallery-375-foss-release.apk \
     Openboard \
     pdf \
     simplecam \
