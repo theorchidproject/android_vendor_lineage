@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/lineage/orchidoscore/sounds/plasma/,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
 
 # Use Material product sounds by default
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=material_minimal.ogg \
-    ro.config.alarm_alert=material_gentle.ogg \
-    ro.config.notification_sound=material_simple_1.ogg
+#PRODUCT_PRODUCT_PROPERTIES += \
+#   ro.config.ringtone=material_minimal.ogg \
+#    ro.config.alarm_alert=material_gentle.ogg \
+#   ro.config.notification_sound=material_simple_1.ogg
