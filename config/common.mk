@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
 
 # Misc packages and Config
 PRODUCT_PACKAGES += \
+    Extra \
     RepainterServicePriv 
 
 PRODUCT_COPY_FILES += \
