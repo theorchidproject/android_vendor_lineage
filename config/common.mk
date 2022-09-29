@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
 
 # Misc packages and Config
 PRODUCT_PACKAGES += \
-    Extra \
+    SakuraSettings \
     RepainterServicePriv 
 
 PRODUCT_COPY_FILES += \
