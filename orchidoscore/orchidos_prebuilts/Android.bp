@@ -11,6 +11,20 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
+	overrides: ["calculator2"],
+
+}
+
+android_app_import {
+	name: "opencal",
+	owner: "google",
+	apk: "opencal.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
 }
 
 android_app_import {

@@ -13,4 +13,5 @@ PRODUCT_PACKAGES += \
     simplecam \
 	simplegallery \
 	tasks \
+    opencal\
     tap 
