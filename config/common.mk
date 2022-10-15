@@ -213,7 +213,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
+    NavigationBarModeGesturalOverlayIM \
     TrebuchetOverlay
+
 # Change OrchidOs Version with each major release.
 OrchidOs_VERSION := CherryBlossom
 LINEAGE_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
