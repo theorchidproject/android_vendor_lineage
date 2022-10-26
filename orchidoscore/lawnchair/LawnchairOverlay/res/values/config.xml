@@ -11,5 +11,9 @@
         <item>app.lawnchair/.LawnchairLauncher</item>
         <!-- Lawnicons -->
         <item>app.lawnchair.lawnicons/.MainActivity</item>
+        <!-- taptap -->
+        <item>com.kieronquinn.app.taptap/.MainActivity</item>
+        <!-- rethinkdns -->
+        <item>com.celzero.bravedns/.MainActivity</item>
     </string-array>
 </resources>
