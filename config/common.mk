@@ -135,7 +135,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SakuraSettings \
     WalkersPapers \
-    TouchGestures 
+    TouchGestures \
+    GameSpace
 
 # Navigation
 PRODUCT_PACKAGES += \
