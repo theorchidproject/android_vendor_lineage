@@ -12,6 +12,7 @@ PRODUCT_PACKAGES += \
     pdf \
     simplecam \
 	simplegallery \
-	tasks \
-    opencal\
-    tap 
+	tap \
+    opencal \
+    rethink \
+    tasks 
