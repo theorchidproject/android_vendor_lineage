@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SakuraSettings \
     WalkersPapers \
-    RepainterServicePriv 
+    TouchGestures 
 
 # Navigation
 PRODUCT_PACKAGES += \
