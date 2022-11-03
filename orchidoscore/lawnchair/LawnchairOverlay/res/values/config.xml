@@ -12,8 +12,8 @@
         <!-- Lawnicons -->
         <item>app.lawnchair.lawnicons/.MainActivity</item>
         <!-- taptap -->
-        <item>com.kieronquinn.app.taptap/.MainActivity</item>
+        <item>com.kieronquinn.app.taptap/.ui.activities.MainActivity</item>
         <!-- rethinkdns -->
-        <item>com.celzero.bravedns/.MainActivity</item>
+        <item>com.celzero.bravedns/.com.celzero.bravedns</item>
     </string-array>
 </resources>
