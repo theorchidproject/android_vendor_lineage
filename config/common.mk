@@ -134,8 +134,7 @@ PRODUCT_PACKAGES += \
 # Misc packages and Config
 PRODUCT_PACKAGES += \
     SakuraSettings \
-    WalkersPapers \
-    Mine
+    WalkersPapers 
 
 # Navigation
 PRODUCT_PACKAGES += \
