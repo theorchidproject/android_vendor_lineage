@@ -12,7 +12,7 @@
         <!-- Lawnicons -->
         <item>app.lawnchair.lawnicons/.MainActivity</item>
         <!-- taptap -->
-        <item>com.kieronquinn.app.taptap/com.kieronquinn.app.taptap.ui.activities.MainActivity</item>
+        <item>com.kieronquinn.app.taptap/.ui.activities.MainActivity</item>
         <!-- rethinkdns -->
         <item>com.celzero.bravedns/.ui.HomeScreenActivity</item>
     </string-array>
