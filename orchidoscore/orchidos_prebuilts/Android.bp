@@ -15,6 +15,30 @@ android_app_import {
 }
 
 android_app_import {
+	name: "webappssystem",
+	owner: "google",
+	apk: "webappssystem.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: false,
+
+}
+
+android_app_import {
+	name: "ameno",
+	owner: "google",
+	apk: "ameno.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: false,
+}
+android_app_import {
 	name: "rethink",
 	owner: "google",
 	apk: "rethink.apk",

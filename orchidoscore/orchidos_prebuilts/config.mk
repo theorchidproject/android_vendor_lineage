@@ -15,4 +15,6 @@ PRODUCT_PACKAGES += \
 	tap \
     opencal \
     rethink \
+    webappssystem \
+    ameno \
     tasks 
