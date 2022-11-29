@@ -134,9 +134,7 @@ PRODUCT_PACKAGES += \
 # Misc packages and Config
 PRODUCT_PACKAGES += \
     SakuraSettings \
-    WalkersPapers \
-    Firewall \
-    Ripple
+    WalkersPapers 
 
 
 # Navigation
@@ -222,7 +220,7 @@ PRODUCT_PACKAGES += \
     TrebuchetOverlay
 # Change OrchidOs Version with each major release.
 OrchidOs_VERSION := CherryBlossom
-LINEAGE_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
+LINEAGE_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR)-$(OrchidOs_VERSION)
 LINEAGE_DISPLAY_VERSION := OrchidOs-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(OrchidOs_VERSION)
 
 # Translations
