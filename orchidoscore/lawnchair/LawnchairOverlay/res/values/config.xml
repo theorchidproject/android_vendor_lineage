@@ -9,17 +9,28 @@
         <item>com.google.android.as/com.google.android.apps.miphone.aiai.allapps.main.MainDummyActivity</item>
         <!-- Lawnchair -->
         <item>app.lawnchair/.LawnchairLauncher</item>
-        <!-- Lawnicons -->
+        <!-- icons -->
         <item>app.lawnchair.lawnicons/.MainActivity</item>
+        <item>website.leifs.delta/website.leifs.delta.activities.MainActivity</item>
+        <!-- radio -->
+        <item>com.caf.fmradio/com.cafmradio.FMRadio</item>
+
         <!-- taptap -->
         <item>com.kieronquinn.app.taptap/.activities.SettingsActivity</item>
         <item>com.kieronquinn.app.taptap/.ui.activities.MainActivity</item>
-        <!-- rethinkdns -->
+        <!-- dns and ads-->
         <item>com.celzero.bravedns/.ui.HomeScreenActivity</item>
+        <item>org.adaway/org.adaway.ui.home.HomeActivity</item>
+        <item>org.jak_linux.dns66/org.jak_linux.dns66.MainActivity</item>
+        <!-- message -->
+        <item>org.brairproject.brair.android/org.brairproject.brair.android.navdrawer.NavDrawerActivity</item>
         <!-- webappsystem -->
         <item>com.tobykurien.webapps/com.tobykurien.webapps.activity.MainActivity</item>
-        <!-- warden -->
-        <item>com.aurora.warden/com.aurora.warden.ui.activities.AuroraActivity/item>
-        
+        <!-- warden and services-->
+        <item>com.aurora.warden/com.aurora.warden.ui.activities.AuroraActivity/</item>
+        <item>com.aurora.services/com.aurora.services.ui.activities.AuroraActivity/</item>
+        <!-- bitwarden and services-->
+        <item>com.x8bit.bitwarden/com.x8bit.bitwarden.MainActivity/</item>
+
     </string-array>
 </resources>

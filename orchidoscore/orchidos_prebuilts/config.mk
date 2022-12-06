@@ -17,4 +17,10 @@ PRODUCT_PACKAGES += \
     rethink \
     webappssystem \
     ameno \
-    tasks 
+    tasks \
+    adaway \
+    aegis \
+    bitwarden \
+    brair \
+    delta \
+    dns66 
