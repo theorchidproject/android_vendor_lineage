@@ -19,7 +19,7 @@
         <!-- webappsystem -->
         <item>com.tobykurien.webapps/com.tobykurien.webapps.activity.MainActivity</item>
         <!-- warden -->
-        <item>com.aurora.warden/com.aurora.warden.ui.activities.AuroraActivity/item>
+        <item>com.aurora.warden/com.aurora.warden.ui.activities.AuroraActivity/</item>
         
     </string-array>
 </resources>
