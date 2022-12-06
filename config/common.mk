@@ -134,9 +134,7 @@ PRODUCT_PACKAGES += \
 # Misc packages and Config
 PRODUCT_PACKAGES += \
     SakuraSettings \
-    WalkersPapers \
-    Firewall \
-    Ripple
+    WalkersPapers 
 
 
 # Navigation
