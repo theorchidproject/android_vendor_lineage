@@ -7,7 +7,7 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES:= true
 
 # OrchidOs MicroG and  minimal GMS options to enable change to applicable call standard vendor settings are WITH_GMS
 # standard build settings:
-# WITH_GMS =true
+WITH_GMS =true
 # Below are the calls, the  vendor locations and core build information. Read carefully to issue call for required version
 # WITH_GMS is MicroG, WITH_GMSMIN is minimal gogle services
 ifeq ($(WITH_GMS), true)
