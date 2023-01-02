@@ -58,7 +58,7 @@
         <item>com.bnyro.translate/com.bnyro.translate.ui.activities.SettingsActivity</item>
         <item>com.bnyro.translate/com.bnyro.translate.ui.activities.AboutActivity</item>
         <!-- Duress -->
-        <item>me.lucky.duress/me.lucky,duress.MainActivity</item>
+        <item>me.lucky.duress/me.lucky.duress.MainActivity</item>
         <item>com.artikus.nolauncher/com.artikus.nolauncher.MainActivity</item>
         <!-- microg -->
         <item>com.google.android.gms/org.microg.gms.ui.SettingsActivity</item>
