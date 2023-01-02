@@ -2,9 +2,9 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "audioR",
+	name: "adaway",
 	owner: "google",
-	apk: "audioR.apk",
+	apk: "adaway.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -15,33 +15,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "webappssystem",
+	name: "Ageis",
 	owner: "google",
-	apk: "webappssystem.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: false,
-
-}
-
-android_app_import {
-	name: "ameno",
-	owner: "google",
-	apk: "ameno.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: false,
-}
-android_app_import {
-	name: "rethink",
-	owner: "google",
-	apk: "rethink.apk",
+	apk: "Ageis.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -52,9 +28,60 @@ android_app_import {
 }
 
 android_app_import {
-	name: "opencal",
+	name: "Allwayson",
 	owner: "google",
-	apk: "opencal.apk",
+	apk: "Allwayson.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "AudioNotes",
+	owner: "google",
+	apk: "AudioNotes.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "bitwarden",
+	owner: "google",
+	apk: "bitwarden.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: false,
+
+}
+
+android_app_import {
+	name: "Darkmode",
+	owner: "google",
+	apk: "Darkmode.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "delta",
+	owner: "google",
+	apk: "delta.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -62,12 +89,13 @@ android_app_import {
 	privileged: false,
 	product_specific: true,
 	overrides: ["calculator2", "Calculator2" ],
+	
 }
 
 android_app_import {
-	name: "lawnfeed",
+	name: "dns66",
 	owner: "google",
-	apk: "lawnfeed.apk",
+	apk: "dns66.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -75,6 +103,19 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 
+}
+
+android_app_import {
+	name: "Duress",
+	owner: "google",
+	apk: "Duress.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	
 }
 
 android_app_import {
@@ -87,13 +128,53 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
-	
+
+}
+
+android_app_import {
+	name: "Gallery",
+	owner: "google",
+	apk: "Gallery.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["gallery3d", "gallery2"],
+
 }
 
 android_app_import {
 	name: "k9mail",
 	owner: "google",
 	apk: "k9mail.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "Libretube",
+	owner: "google",
+	apk: "Libretube.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "Nolauncher",
+	owner: "google",
+	apk: "Nolauncher.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -111,8 +192,23 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
+	privileged: false,
 	product_specific: true,
+
+}
+
+android_app_import {
+	name: "OpenCalc",
+	owner: "google",
+	apk: "OpenCalc.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["calculator2", "Calculator2" ],
+
 }
 
 android_app_import {
@@ -124,19 +220,97 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: false,
+	product_specific: true,
+
 }
 
 android_app_import {
-	name: "sms",
+	name: "QKSMS",
 	owner: "google",
-	apk: "sms.apk",
+	apk: "QKSMS.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["messaging"],
+
+}
+
+android_app_import {
+	name: "QuickTiles",
+	owner: "google",
+	apk: "QuickTiles.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+
+}
+
+android_app_import {
+	name: "Rcx",
+	owner: "google",
+	apk: "Rcx.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: false,
 	product_specific: true,
-	overrides: ["messaging"],
+
+}
+
+android_app_import {
+	name: "rethink",
+	owner: "google",
+	apk: "rethink.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["camera2", "Camera2" ],
+
+}
+
+android_app_import {
+	name: "RiseupVPN",
+	owner: "RiseupVPN",
+	apk: "RiseupVPN",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+
+}
+
+android_app_import {
+	name: "Saveacopy",
+	owner: "google",
+	apk: "Saveacopy.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+
+}
+
+android_app_import {
+	name: "Savedown",
+	owner: "google",
+	apk: "Savedown.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+
 }
 
 android_app_import {
@@ -148,20 +322,33 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
 	overrides: ["camera2", "Camera2" ],
+
 }
 
 android_app_import {
-	name: "gallery-375-foss-release",
-	owner: "simpleGallery",
-	apk: "gallery-375-foss-release.apk",
+	name: "sms",
+	owner: "google",
+	apk: "sms.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: false,
-	overrides: ["gallery3d" , "gallery2"],
+	privileged: true,
+	overrides: ["messaging"],
+
+}
+
+android_app_import {
+	name: "tap",
+	owner: "google",
+	apk: "tap.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+
 }
 
 android_app_import {
@@ -173,62 +360,13 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	overrides: ["fmradio"],
-}
-	
-android_app_import {
-	name: "tap",
-	owner: "google",
-	apk: "tap.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ageis",
-	owner: "google",
-	apk: "ageis.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: true,
-	
-}
-
-android_app_import {
-	name: "bitwarden",
-	owner: "google",
-	apk: "bitwarden.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: true,
-
-}
-
-android_app_import {
-	name: "brair",
-	owner: "google",
-	apk: "brair.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 	product_specific: true,
 }
 
 android_app_import {
-	name: "dns66",
+	name: "Translate",
 	owner: "google",
-	apk: "dns66.apk",
+	apk: "Translate.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -237,9 +375,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "adaway",
+	name: "Webbrowser",
 	owner: "google",
-	apk: "adaway.apk",
+	apk: "Webbrowser.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -248,14 +386,3 @@ android_app_import {
 	product_specific: true,
 }
 
-android_app_import {
-	name: "delta",
-	owner: "google",
-	apk: "delta.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}

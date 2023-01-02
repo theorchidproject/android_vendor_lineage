@@ -2,26 +2,32 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lineage/orchidoscore/orchidos_prebuilts
 
 PRODUCT_PACKAGES += \
-    lawnfeed \
-    audioR \
-    sms \
-    ForkClient \
-	k9mail \
-    gallery-375-foss-release.apk \
-    Openboard \
-    pdf \
-	quillnotes \
-    simplecam \
-	simplegallery \
-	tap \
-    opencal \
-    rethink \
-    webappssystem \
-    ameno \
-    tasks \
     adaway \
-    aegis \
+    Ageis \
+    Allwayson \
+    AudioNotes \
     bitwarden \
-    brair \
-    delta \
-    dns66 
+    Darkmode \
+	delta \
+    dns66 \
+	Duress \
+	ForkClient \
+    Gallery \
+    k9mail \
+    Libretube \
+    Nolaunhcer \
+    Openboard \
+    Opencalc \
+    pdf \
+    QuickTiles \
+    Rcx \
+    rethink \
+    RiseupVPN \
+    Saveacopy \
+    Savedown \
+    simplecam \
+    sms \
+    tap \
+    tasks \
+    Translate \
+    Webbrowser 
