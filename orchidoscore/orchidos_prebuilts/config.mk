@@ -23,4 +23,7 @@ PRODUCT_PACKAGES += \
     bitwarden \
     brair \
     delta \
-    dns66 
+    dns66 \
+    DarkMode \
+    QuickTiles \
+    Translate
