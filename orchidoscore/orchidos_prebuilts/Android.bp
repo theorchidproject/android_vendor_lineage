@@ -12,31 +12,7 @@ android_app_import {
 	privileged: false,
 	product_specific: true,
 
-}
 
-android_app_import {
-	name: "webappssystem",
-	owner: "google",
-	apk: "webappssystem.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: false,
-
-}
-
-android_app_import {
-	name: "ameno",
-	owner: "google",
-	apk: "ameno.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: false,
 }
 android_app_import {
 	name: "rethink",
@@ -62,19 +38,6 @@ android_app_import {
 	privileged: false,
 	product_specific: true,
 	overrides: ["calculator2", "Calculator2" ],
-}
-
-android_app_import {
-	name: "lawnfeed",
-	owner: "google",
-	apk: "lawnfeed.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-
 }
 
 android_app_import {
@@ -150,32 +113,7 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 	overrides: ["camera2", "Camera2" ],
-}
-
-android_app_import {
-	name: "gallery-375-foss-release",
-	owner: "simpleGallery",
-	apk: "gallery-375-foss-release.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	overrides: ["gallery3d" , "gallery2"],
-}
-
-android_app_import {
-	name: "tasks",
-	owner: "google",
-	apk: "tasks.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	overrides: ["fmradio"],
-}
-	
+}	
 android_app_import {
 	name: "tap",
 	owner: "google",
@@ -187,18 +125,6 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "ageis",
-	owner: "google",
-	apk: "ageis.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
-	product_specific: true,
-	
-}
 
 android_app_import {
 	name: "bitwarden",
@@ -213,17 +139,6 @@ android_app_import {
 
 }
 
-android_app_import {
-	name: "brair",
-	owner: "google",
-	apk: "brair.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
 
 android_app_import {
 	name: "dns66",
@@ -248,14 +163,3 @@ android_app_import {
 	product_specific: true,
 }
 
-android_app_import {
-	name: "delta",
-	owner: "google",
-	apk: "delta.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
