@@ -16,8 +16,12 @@
   -->
 <permissions>
     <privapp-permissions package="org.bromite.bromite">
-            <permission name="android.permission.USE_RESERVED_DISK"/>
-            <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
-            <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 </permissions>
