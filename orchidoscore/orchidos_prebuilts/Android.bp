@@ -163,3 +163,14 @@ android_app_import {
 	product_specific: true,
 }
 
+android_app_import {
+	name: "deckers.thibault.aves.libre_8802",
+	owner: "google",
+	apk: "deckers.thibault.aves.libre_8802.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	overrides: ["gallery3d", "gallery2"],
+}

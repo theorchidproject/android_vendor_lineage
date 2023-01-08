@@ -14,4 +14,5 @@ PRODUCT_PACKAGES += \
     rethink \
     adaway \
     bitwarden \
-    dns66 
+    dns66 \
+    deckers.thibault.aves.libre_8802
