@@ -1,0 +1,10 @@
+soong_namespace {
+}
+
+prebuilt_etc_xml {
+	name: "privapp-permissions_com.asdoi.quicktiles",
+	src: "permissions/privapp-permissions_com.asdoi.quicktiles.xml",
+	filename_from_src: true,
+	sub_dir: "permissions",
+	system_ext_specific: true
+}
