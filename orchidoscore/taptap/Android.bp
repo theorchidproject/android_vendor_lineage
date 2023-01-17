@@ -1,0 +1,14 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "TapTap-v1.5",
+	owner: "google",
+	apk: "TapTap-v1.5.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+

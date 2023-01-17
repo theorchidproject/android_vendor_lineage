@@ -113,16 +113,7 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 	overrides: ["camera2", "Camera2" ],
-}	
-android_app_import {
-	name: "tap",
-	owner: "google",
-	apk: "tap.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
+
 }
 
 
@@ -186,4 +177,3 @@ android_app_import {
 	privileged: false,
 }
 
-com.asdoi.quicktiles_14.apk

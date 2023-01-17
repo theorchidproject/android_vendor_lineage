@@ -6,3 +6,4 @@ $(call inherit-product, vendor/lineage/orchidoscore/orchidos_prebuilts/config.mk
 $(call inherit-product, vendor/lineage/orchidoscore/lawnchair/lawnchair.mk)
 $(call inherit-product, vendor/lineage/orchidoscore/addons/addons.mk)
 $(call inherit-product, vendor/lineage/orchidoscore/bromite_system_inline/bromite.mk)
+$(call inherit-product, vendor/lineage/orchidoscore/taptap/config.mk)
