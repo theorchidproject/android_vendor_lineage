@@ -174,3 +174,16 @@ android_app_import {
 	privileged: false,
 	overrides: ["gallery3d", "gallery2"],
 }
+
+android_app_import {
+	name: "com.asdoi.quicktiles_14",
+	owner: "google",
+	apk: "com.asdoi.quicktiles_14.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+}
+
+com.asdoi.quicktiles_14.apk
