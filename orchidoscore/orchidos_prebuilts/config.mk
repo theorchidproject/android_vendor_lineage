@@ -17,5 +17,6 @@ PRODUCT_PACKAGES += \
     dns66 \
     com.asdoi.quicktiles_14 \
     com.simplemobiletools.gallery.pro_380 \
-    com.simplemobiletools.contacts.pro_100
+    com.simplemobiletools.contacts.pro_100 \
+    translateyou
 

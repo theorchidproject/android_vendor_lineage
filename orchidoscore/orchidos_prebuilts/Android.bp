@@ -188,3 +188,14 @@ android_app_import {
 	privileged: false,
 	overrides: ["contacts"],
 }
+
+android_app_import {
+	name: "translateyou",
+	owner: "google",
+	apk: "translateyou.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+}
