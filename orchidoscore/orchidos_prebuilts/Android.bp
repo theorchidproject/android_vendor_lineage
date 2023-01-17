@@ -177,3 +177,14 @@ android_app_import {
 	privileged: false,
 }
 
+android_app_import {
+	name: "com.simplemobiletools.contacts.pro_100",
+	owner: "google",
+	apk: "com.simplemobiletools.contacts.pro_100.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	overrides: ["contacts"],
+}

@@ -16,4 +16,6 @@ PRODUCT_PACKAGES += \
     bitwarden \
     dns66 \
     com.asdoi.quicktiles_14 \
-    com.simplemobiletools.gallery.pro_380
+    com.simplemobiletools.gallery.pro_380 \
+    com.simplemobiletools.contacts.pro_100
+
