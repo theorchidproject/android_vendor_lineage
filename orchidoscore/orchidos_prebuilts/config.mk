@@ -19,5 +19,7 @@ PRODUCT_PACKAGES += \
     com.simplemobiletools.gallery.pro_380 \
     com.simplemobiletools.contacts.pro_100 \
     translateyou \
-    com.simplemobiletools.filemanager.pro_130
+    com.simplemobiletools.filemanager.pro_130 \
+    io.github.domi04151309.alwayson_383
+
 

@@ -211,3 +211,14 @@ android_app_import {
 	privileged: false,
 	overrides: ["documentsui"],
 }
+
+android_app_import {
+	name: "io.github.domi04151309.alwayson_383",
+	owner: "google",
+	apk: "io.github.domi04151309.alwayson_383.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+}

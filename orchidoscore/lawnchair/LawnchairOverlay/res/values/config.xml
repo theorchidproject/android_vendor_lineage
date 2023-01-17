@@ -28,7 +28,7 @@
         <item>com.caf.fmradio/com.caf.fmradio.Settings</item>
         <item>com.caf.fmradio/com.caf.fmradio.FmTags</item>
         <!-- Allwayson -->
-        <item>io.github.domi04151309.alwayson/io.github.domi04151309.alwayson.activities.SplashActivity</item> 
+        <item>io.github.domi04151309.alwayson/io.github.domi04151309.alwayson.SplashActivity</item> 
         <!-- taptap -->
         <item>com.kieronquinn.app.taptap/.activities.SettingsActivity</item>
         <item>com.kieronquinn.app.taptap/.ui.activities.MainActivity</item>
