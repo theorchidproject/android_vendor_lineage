@@ -164,9 +164,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "deckers.thibault.aves.libre_8802",
+	name: "com.simplemobiletools.gallery.pro_380",
 	owner: "google",
-	apk: "deckers.thibault.aves.libre_8802.apk",
+	apk: "com.simplemobiletools.gallery.pro_380.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

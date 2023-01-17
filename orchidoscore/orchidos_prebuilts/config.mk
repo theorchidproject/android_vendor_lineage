@@ -15,5 +15,5 @@ PRODUCT_PACKAGES += \
     adaway \
     bitwarden \
     dns66 \
-    deckers.thibault.aves.libre_8802 \
-    com.asdoi.quicktiles_14
+    com.asdoi.quicktiles_14 \
+    com.simplemobiletools.gallery.pro_380
