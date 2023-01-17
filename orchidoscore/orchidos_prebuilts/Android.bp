@@ -199,3 +199,15 @@ android_app_import {
 	},
 	privileged: false,
 }
+
+android_app_import {
+	name: "com.simplemobiletools.filemanager.pro_130",
+	owner: "google",
+	apk: "com.simplemobiletools.filemanager.pro_130.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	overrides: ["documentsui"],
+}

@@ -18,5 +18,6 @@ PRODUCT_PACKAGES += \
     com.asdoi.quicktiles_14 \
     com.simplemobiletools.gallery.pro_380 \
     com.simplemobiletools.contacts.pro_100 \
-    translateyou
+    translateyou \
+    com.simplemobiletools.filemanager.pro_130
 
