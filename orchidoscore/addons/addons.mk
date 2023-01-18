@@ -147,4 +147,3 @@ PRODUCT_PACKAGES += \
     LineageExtendedThemesStub 
 
 
-endif
