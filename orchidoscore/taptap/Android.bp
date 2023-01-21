@@ -11,4 +11,4 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
-
+}
