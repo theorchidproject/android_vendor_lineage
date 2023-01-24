@@ -1,0 +1,71 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "com.simplemobiletools.camera_84",
+	owner: "google",
+	apk: "com.simplemobiletools.camera_84.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["camera2", "Camera2" ],
+
+
+
+}
+android_app_import {
+	name: "com.simplemobiletools.contacts.pro_100",
+	owner: "google",
+	apk: "com.simplemobiletools.contacts.pro_100.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "com.simplemobiletools.filemanager.pro_130",
+	owner: "google",
+	apk: "com.simplemobiletools.filemanager.pro_130.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["documentsui"],
+}
+
+android_app_import {
+	name: "com.simplemobiletools.gallery.pro_380",
+	owner: "google",
+	apk: "com.simplemobiletools.gallery.pro_380.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["gallery3d", "gallery2"],
+	
+}
+
+android_app_import {
+	name: "com.simplemobiletools.smsmessenger_71",
+	owner: "google",
+	apk: "com.simplemobiletools.smsmessenger_71.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["messaging"],
+
+}

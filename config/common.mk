@@ -4,7 +4,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/bromite_system_inline/bromite.mk)
 $(call inherit-product-if-exists, vendor/lineage/lawnchair/lawnchair.mk)
 $(call inherit-product-if-exists, vendor/lineage/addons/addons.mk)
-
+$(call inherit-product-if-exists, vendor/OrchidOsPrebuilts/config.mk)
 # OrchidOs MicroG
 # standard build settings:
  WITH_GMS =true
