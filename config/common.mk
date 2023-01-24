@@ -5,6 +5,12 @@ $(call inherit-product-if-exists, vendor/lineage/bromite_system_inline/bromite.m
 $(call inherit-product-if-exists, vendor/lineage/lawnchair/lawnchair.mk)
 $(call inherit-product-if-exists, vendor/lineage/addons/addons.mk)
 
+# OrchidOs MicroG
+# standard build settings:
+ WITH_GMS =true
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/lineage/partner_gms/gms.mk)
+endif
 
 PRODUCT_BRAND ?= LineageOS
 
