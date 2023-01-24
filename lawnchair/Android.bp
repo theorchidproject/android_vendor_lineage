@@ -1,0 +1,40 @@
+soong_namespace {
+}
+
+android_app_import {
+    name: "Lawnchair",
+
+    privileged: true,
+    system_ext_specific: true,
+
+	required: [
+		"lawnchair-hiddenapi-package-whitelist",
+		"privapp-permissions-lawnchair",
+	],
+
+    overrides: [
+        "Home", "Launcher2", "Launcher3", "Launcher3QuickStep", "ParanoidQuickStep", "PixelLauncher", "TrebuchetQuickStep",
+    ],
+
+    dex_preopt: {
+        enabled: false,
+    },
+    apk: "Lawnchair.apk",
+    presigned: true,
+}
+
+prebuilt_etc_xml {
+	name: "lawnchair-hiddenapi-package-whitelist",
+	src: "sysconfig/lawnchair-hiddenapi-package-whitelist.xml",
+	filename_from_src: true,
+	sub_dir: "sysconfig",
+	system_ext_specific: true
+}
+
+prebuilt_etc_xml {
+	name: "privapp-permissions-lawnchair",
+	src: "permissions/privapp-permissions-lawnchair.xml",
+	filename_from_src: true,
+	sub_dir: "permissions",
+	system_ext_specific: true
+}
