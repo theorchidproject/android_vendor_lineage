@@ -3,6 +3,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/OrchidOsPrebuilts/config.mk)
 $(call inherit-product-if-exists, vendor/bromite_system_inline/bromite.mk)
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+$(call inherit-product, vendor/lineage/systemconfig/OrchidosCoreProduct.mk)
+$(call inherit-product, vendor/lineage/addons/addons.mk)
+$(call inherit-product-if-exists, vendor/lineage/fonts.mk)
 
 # OrchidOs MicroG
 # standard build settings:

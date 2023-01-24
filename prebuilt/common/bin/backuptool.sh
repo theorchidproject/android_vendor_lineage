@@ -6,8 +6,7 @@
 export C=/tmp/backupdir
 export SYSDEV="$(readlink -nf "$2")"
 export SYSFS="$3"
-export V=19.1
-
+export V=1.0
 export ADDOND_VERSION=3
 
 # Partitions to mount for backup/restore in V3
