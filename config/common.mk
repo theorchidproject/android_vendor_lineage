@@ -1,6 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/bromite_system_inline/bromite.mk)
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 
 PRODUCT_BRAND ?= LineageOS
