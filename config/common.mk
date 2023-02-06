@@ -113,6 +113,11 @@ PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     LineageSetupWizard
 
+ # Lineage packages
+PRODUCT_PACKAGES += \
+    SakuraSettings
+   
+
 # Navigation
 PRODUCT_PACKAGES += \
     ImmersiveNavigationOverlay   
