@@ -19,5 +19,9 @@
 
     <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
     <string name="help_url_fingerprint" translatable="false">https://support.google.com</string>
+
+
+    <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
+    <string name="backup_transport_setting_label" translatable="false">back up string</string>
 </resources>
 
