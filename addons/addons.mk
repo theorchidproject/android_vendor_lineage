@@ -39,7 +39,6 @@ PRODUCT_PACKAGES += \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
     FontOswaldOverlay \
-    FontInterOverlay \
     FontOppoSansOverlay \
     FontQuandoOverlay \
     FontRedressedOverlay \
