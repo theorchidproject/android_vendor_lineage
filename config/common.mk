@@ -4,6 +4,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/bromite_system_inline/bromite.mk)
 $(call inherit-product-if-exists, vendor/lineage/lawnchair/lawnchair.mk)
 $(call inherit-product-if-exists, vendor/lineage/addons/addons.mk)
+$(call inherit-product-if-exists, vendor/OrchidOsPrebuilts/config.mk)
 
 # OrchidOs MicroG
 # standard build settings:
@@ -131,9 +132,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
