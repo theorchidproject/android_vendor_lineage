@@ -69,3 +69,104 @@ android_app_import {
 	overrides: ["messaging"],
 
 }
+
+
+android_app_import {
+	name: "audioR",
+	owner: "google",
+	apk: "audioR.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "opencal",
+	owner: "google",
+	apk: "opencal.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+	overrides: ["calculator2", "Calculator2" ],
+	
+}
+
+android_app_import {
+	name: "k9mail",
+	owner: "google",
+	apk: "k9mail.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+
+android_app_import {
+	name: "pdf",
+	owner: "google",
+	apk: "pdf.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	
+}
+
+android_app_import {
+	name: "dns66",
+	owner: "google",
+	apk: "dns66.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+
+}
+
+android_app_import {
+	name: "adaway",
+	owner: "google",
+	apk: "adaway.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+
+android_app_import {
+	name: "com.asdoi.quicktiles_14",
+	owner: "google",
+	apk: "com.asdoi.quicktiles_14.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+}
+
+android_app_import {
+	name: "io.github.domi04151309.alwayson_383",
+	owner: "google",
+	apk: "io.github.domi04151309.alwayson_383.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+}
