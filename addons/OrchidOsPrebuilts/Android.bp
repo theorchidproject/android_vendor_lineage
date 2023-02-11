@@ -2,9 +2,9 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "com.simplemobiletools.camera_84",
+	name: "selfie",
 	owner: "google",
-	apk: "com.simplemobiletools.camera_84.apk",
+	apk: "selfie.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

@@ -4,6 +4,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/lineage/bromite_system_inline/bromite.mk)
 $(call inherit-product-if-exists, vendor/lineage/lawnchair/lawnchair.mk)
 $(call inherit-product, vendor/lineage/addons/OrchidOsPrebuilts/config.mk)
+$(call inherit-product, vendor/lineage/addons/TapTap-v1.6.mk)
 $(call inherit-product, vendor/lineage/addons/addons.mk)
 $(call inherit-product, vendor/partner_gms/gms.mk)
 
