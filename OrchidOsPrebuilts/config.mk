@@ -1,5 +1,5 @@
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/lineage/OrchidOs_Prebuilts
+    vendor/lineage/OrchidOsPrebuilts
 
 PRODUCT_PACKAGES += \
     com.simplemobiletools.camera_84 \
