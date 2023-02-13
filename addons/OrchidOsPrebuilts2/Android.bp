@@ -1,0 +1,27 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "org.forkgram.messenger_310608",
+	owner: "google",
+	apk: "org.forkgram.messenger_310608.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
+android_app_import {
+	name: "rethinkdns25",
+	owner: "google",
+	apk: "rethinkdns25.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
