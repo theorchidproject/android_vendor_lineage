@@ -30,7 +30,7 @@ android_app_import {
 android_app_import {
 	name: "com.drnoob.datamonitor_11",
 	owner: "google",
-	apk: "com.drnoob.datamonitor_11",
+	apk: "com.drnoob.datamonitor_11.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
