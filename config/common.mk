@@ -7,6 +7,7 @@ $(call inherit-product, vendor/lineage/addons/OrchidOsPrebuilts/config.mk)
 $(call inherit-product, vendor/lineage/addons/TapTap-v1.6/config.mk)
 $(call inherit-product, vendor/lineage/addons/addons.mk)
 $(call inherit-product, vendor/partner_gms/gms.mk)
+$(call inherit-product, vendor/config/orchidos.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
