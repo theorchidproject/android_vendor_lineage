@@ -39,7 +39,7 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
-	overrides: ["documentsui", "DocumentsUI"],
+	overrides: ["documentsui", "DocumentsUI", "documentsUI"],
 }
 
 android_app_import {
@@ -52,7 +52,7 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
-	overrides: ["gallery3d", "gallery2", "gallery2"],
+	overrides: ["gallery3d", "gallery2", "Gallery3d", "Gallery2"],
 	
 }
 
@@ -147,17 +147,6 @@ android_app_import {
 	privileged: false,
 	product_specific: true,
 
-}
-
-android_app_import {
-	name: "com.asdoi.quicktiles_14",
-	owner: "google",
-	apk: "com.asdoi.quicktiles_14.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: false,
 }
 
 android_app_import {

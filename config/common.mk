@@ -9,6 +9,7 @@ $(call inherit-product, vendor/partner_gms/gms.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Rom.mk)
 $(call inherit-product, vendor/lineage/addons/OrchidOsPrebuilts2/config.mk)
 $(call inherit-product, vendor/lineage/addons/findmydevice/config.mk)
+$(call inherit-product, vendor/lineage/addons/community/com.mk)
 
 PRODUCT_BRAND ?= LineageOS
 

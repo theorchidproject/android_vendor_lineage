@@ -14,5 +14,4 @@ PRODUCT_PACKAGES += \
     adaway \
     bitwarden \
     dns66 \
-    io.github.domi04151309.alwayson_383 \
-    com.asdoi.quicktiles_14
+    io.github.domi04151309.alwayson_383 
