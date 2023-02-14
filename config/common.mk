@@ -9,7 +9,7 @@ $(call inherit-product, vendor/partner_gms/gms.mk)
 $(call inherit-product-if-exists, vendor/lineage/config/Rom.mk)
 $(call inherit-product, vendor/lineage/addons/OrchidOsPrebuilts2/config.mk)
 $(call inherit-product, vendor/lineage/addons/findmydevice/config.mk)
-$(call inherit-product, vendor/lineage/addons/community/com.mk)
+$(call inherit-product, vendor/community/community.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
  # Lineage packages
 PRODUCT_PACKAGES += \
     SakuraSettings
-   
+    WalkersPapers
 
 # Navigation
 PRODUCT_PACKAGES += \
