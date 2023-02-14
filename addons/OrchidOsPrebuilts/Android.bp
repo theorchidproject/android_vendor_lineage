@@ -39,7 +39,7 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
-	overrides: ["documentsui"],
+	overrides: ["documentsui", "DocumentsUI"],
 }
 
 android_app_import {
@@ -52,7 +52,7 @@ android_app_import {
 	},
 	privileged: false,
 	product_specific: true,
-	overrides: ["gallery3d", "gallery2"],
+	overrides: ["gallery3d", "gallery2", "gallery2"],
 	
 }
 
