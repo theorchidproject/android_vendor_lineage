@@ -16,6 +16,10 @@
         <!-- downloader -->
         <item>xyz.myachin.downloader/xyz.myachin.downloader.ui.share.ProxySharingActivity</item>
         <item>xyz.myachin.downloader/xyz.myachin.downloader.ui.share.SharingActivity</item>
+        <!-- find my device -->
+        <item>de.nulide.findmydevice/de.nulide.findmydevice.ui.MainActivity</item>
+        <!-- datamonitor -->
+        <item>com.drnoob.datamonitor/com.drnoob.datamonitor.ui.activities.SetupActivity</item>
         <!-- wallpaper dark -->
         <item>com.github.cvzi.darkmodewallpaper/com.github.cvzi.darkmodewallpaper.activity.SetLockScreenNightActivity</item>
         <item>com.github.cvzi.darkmodewallpaper/com.github.cvzi.darkmodewallpaper.activity.LockScreenActivity</item>
