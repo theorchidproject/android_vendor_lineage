@@ -1,0 +1,15 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "delta-v1.7.6-foss",
+	owner: "google",
+	apk: "delta-v1.7.6-foss.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: false,
+	product_specific: true,
+
+}
