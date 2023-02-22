@@ -39,3 +39,16 @@ android_app_import {
 	product_specific: true,
 
 }
+
+android_app_import {
+	name: "com.android.talkback_370044210",
+	owner: "google",
+	apk: "com.android.talkback_370044210.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+
+}
