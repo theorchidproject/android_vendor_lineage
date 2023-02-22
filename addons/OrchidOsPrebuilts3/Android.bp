@@ -26,3 +26,16 @@ android_app_import {
 	product_specific: true,
 
 }
+
+android_app_import {
+	name: "NativeAlpha-standard-arm64-v8a-release-v1.3.1",
+	owner: "google",
+	apk: "NativeAlpha-standard-arm64-v8a-release-v1.3.1.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+
+}
