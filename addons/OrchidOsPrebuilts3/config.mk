@@ -3,4 +3,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     delta-v1.7.6-foss \
-    TapTap-0.2-Alpha
+    TapTap-0.4-Alpha
