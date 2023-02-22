@@ -17,7 +17,7 @@ android_app_import {
 android_app_import {
 	name: "TapTap-0.4-Alpha",
 	owner: "google",
-	apk: "TapTap-0.2-Alpha.apk",
+	apk: "TapTap-0.4-Alpha.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
